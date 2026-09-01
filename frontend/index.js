@@ -1,10 +1,11 @@
 const express = require('express')
 const path = require('path')
+require('dotenv').config()
 
 const app = express()
 const PORT = process.env.PORT || 3000
 
-const SUBMIT_URL = 'http://127.0.0.1:5000/submit'
+const SUBMIT_URL = process.env.BACKEND_URL
 
 // Add body parsing middleware
 app.use(express.urlencoded({ extended: true }))
