@@ -15,7 +15,7 @@ app = Flask("Mohit'sApplication")
 @app.route("/")
 def ping():
     # return render_template("form.html")
-    return "Pong!"
+    return "Pong! Ping! Pong! /n"
     
 # @app.route("/todo")
 # def todo():
